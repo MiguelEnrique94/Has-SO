@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using OsDsII.api.Dtos;
+using OsDsII.api.Dtos.Customers;
 using OsDsII.api.Models;
 
 namespace OsDsII.api
@@ -10,6 +10,7 @@ namespace OsDsII.api
         {
             CreateMap<CreateCustomerDto, Customer>();
             CreateMap<CustomerDto, Customer>();
+             CreateMap<Customer, CustomerDto>();
         }
     }
 }
